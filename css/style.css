@@ -10,7 +10,7 @@ h1 {
 /* b.) ID Selector - Selects the element based one the id*/
     /* Id should be unique for everyone */
 
-    #heading-one {
+    #heading-one:hover {
     color: lightcoral;
     }
 
@@ -21,4 +21,29 @@ h1 {
 
     .myPara{
         color: purple;
+    }
+
+    /* d. attribuute selector */
+    /* img[src^=https://] */
+    /* Elementname[ attribute name condition]
+    For eg— I want to find the <a> whose here starts with https:// */
+    /* in selector square brackets mean attribute selector */
+    a[href^="https://"]{
+        color: yellow;
+    }
+
+    a[href*="/"]{
+        color: red;
+    }
+
+    /* d. pseudo selector */
+    .unordered-list-item:first-child{
+        color: blue;
+    }
+    /* --first child mean where the unorderd class item in the display is seen first will be styled */
+    .unordered-list-item:last-child{
+        color: blue;
+    }
+    .unordered-list-item:nth-child(4){
+        color: blue;
     }

@@ -33,7 +33,7 @@ h1 {
     }
 
     a[href*="/"]{
-        color: red;
+        color: rgb(224, 55, 55);
     }
 
     /* d. pseudo selector */
@@ -46,4 +46,17 @@ h1 {
     }
     .unordered-list-item:nth-child(4){
         color: blue;
+    }
+    /* Colors & Gradients (color) */
+
+    /* Colors in CSS can be defined in 3 ways - colour picker use kroooo */
+        /* h1{color: #454ea3} */
+
+    /* Gradients -> 1. Linear Gradient 2. Radial Gradient  */
+
+    #Container-one{
+        width: 400px;
+        height: 400px;
+        background: linear-gradient(red,blue,green,yellow);
+        
     }

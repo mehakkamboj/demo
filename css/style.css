@@ -1,62 +1,142 @@
-/* 1. Selectors */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+    /* 1. Selectors */
 
-/* selector { cssProperty: cssValue: } */
-/* a.) Element selector - Select elements based on name */
+    /* selector { cssProperty: cssValue: } */
+    /* a.) Element selector - Select elements based on name */
 
-h1 {
-    color: blue;
-    }
-
-/* b.) ID Selector - Selects the element based one the id*/
-    /* Id should be unique for everyone */
-
-    #heading-one:hover {
-    color: lightcoral;
-    }
-
-/* c.) Class Selector - Selects the elements based on class name */
-    /* #para-one , #para-two ,#para-four {
-        color: gray;
-    }*/
-
-    .myPara{
-        color: purple;
-    }
-
-    /* d. attribuute selector */
-    /* img[src^=https://] */
-    /* Elementname[ attribute name condition]
-    For eg— I want to find the <a> whose here starts with https:// */
-    /* in selector square brackets mean attribute selector */
-    a[href^="https://"]{
-        color: yellow;
-    }
-
-    a[href*="/"]{
-        color: rgb(224, 55, 55);
-    }
-
-    /* d. pseudo selector */
-    .unordered-list-item:first-child{
+        h1 {
         color: blue;
-    }
-    /* --first child mean where the unorderd class item in the display is seen first will be styled */
-    .unordered-list-item:last-child{
-        color: blue;
-    }
-    .unordered-list-item:nth-child(4){
-        color: blue;
-    }
-    /* Colors & Gradients (color) */
+        font-family: Roboto,sans-serif;
+        }
+        /* body{
+            background-color: rgb(8, 94, 169);
+        } */
 
-    /* Colors in CSS can be defined in 3 ways - colour picker use kroooo */
-        /* h1{color: #454ea3} */
+    /* b.) ID Selector - Selects the element based one the id*/
+        /* Id should be unique for everyone */
 
-    /* Gradients -> 1. Linear Gradient 2. Radial Gradient  */
+        #heading-one:hover {
+        color: lightcoral;
+        }
 
-    #Container-one{
-        width: 400px;
-        height: 400px;
-        background: linear-gradient(red,blue,green,yellow);
-        
-    }
+    /* c.) Class Selector - Selects the elements based on class name */
+        /* #para-one , #para-two ,#para-four {
+            color: gray;
+        }*/
+
+        .myPara{
+            color: rgb(120, 19, 120);
+        }
+
+    /* d.) Attribute selector -  */
+        /* elementName[attributeName condition] */
+        /* i want to find the <a> whose href starts with https:// */
+        /* ^ -> Starts with
+        $ -> Ends with
+        * -> contains */
+        a[href^="https://"]{
+            color: rgb(105, 105, 66);
+        }
+
+        /* a[href$=.jpg] */
+        /* a[href*="/"] */
+        /* img[src^="../"] */
+
+    /* e.) Pseudo Selectors */
+
+        .unordered-list-item:first-child{
+            color: brown;
+        }
+        .unordered-list-item:last-child{
+            color: brown;
+        }
+        .unordered-list-item:nth-child(4){
+            color: maroon;
+        }
+
+    /* Unit of measurements */
+    
+    /* 1. Absolute Unit (px, cm, mm, inc, ... ), 
+    2. Relative Unit (em) */
+        p {
+        /* font-size: 18px ; */
+        font-size: 1.2em; 
+        /* font-size: 5cm; */
+        }
+
+        img {
+        height: 720px;
+        width: 75%;
+        }
+
+    /* BOX MODEL */
+        #form-email, #form-name, #form-pwd {
+            width: 100%;
+        }
+
+        .form-item {
+            margin: 8px;
+        }
+
+        form {
+            /* border: widthOfBorder style color; */
+            /* style :- 1. solid, 2. dotted, 3. dashed, 4. double */
+            border: 3px solid gray;
+            
+            /* 
+            padding: a-px;
+            padding: a-px b-px; a -> top-bottom | b -> left-right
+            padding: a-px b-px c-px d-px; a -> top | b -> right | c -> bottom | d -> left 
+            */
+            padding: 10px;
+            padding: 10px 5px;
+            padding-top: 5px; padding-right: 10px; padding-bottom: 15px; padding-left: 20px;
+            padding: 5px 10px 15px 20px;
+
+            margin: 10px;
+            margin: 10px 5px;
+            margin: 5px 10px 15px 20px;
+
+            /* NOTE:- padding & margin are both parent properties -> they also have sub-properties associated w them. */
+            /* padding-left:; padding-right:; padding-top:; padding-bottom:; margin-top:; margin-bottom:; margin-left:; margin-right:; */
+        }
+
+    /* background: */
+        #container-two {
+            width: 65%;
+            height: 500px;
+            /* NOTE:- background is a parent property */
+            /* background: red; */
+            background: url('https://cdn.wallpapersafari.com/13/84/wlZ31L.jpg');
+            background-repeat: no-repeat;
+            background-color: green;
+            /* background-size: 100%; background-size: auto; background-size: cover; */
+            background-size: cover;
+        }
+
+    /* Gradients - 1. Linear Gradient, 2. Radial Gradients */
+        #container-three {
+            width: 65%;
+            height: 400px;
+
+            /* NOTE :- If no direction is provided, default is top to bottom | Directions :- bottom, top, left, right */
+            /* background: linear-gradient(direction, black, red, blue, green, yellow, white); */
+            /* background: linear-gradient(to left, black, red, blue, green, yellow, white); */
+
+            /* NOTE :- You can specify the directions usinh deg values (0deg) starts from bottom, reaches to top */
+            background: linear-gradient(360deg, black, red, blue, green, yellow, white);
+
+    /* 
+    COLORS :-
+    1. Named Colors     2. HEX Code     3. RBG() -> rgb(red, green, blue)   4. RGBA() -> rgb(red, green, blue, absolute) -> abs [0-1]; 
+    */
+        }
+
+        #container-four {
+            width: 400px;
+            height: 400px;
+
+            background: radial-gradient(red,blue,green,yellow,orange,purple);
+        }
+
+    /* Fonts and Font-Family */

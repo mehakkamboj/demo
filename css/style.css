@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+    /* body {
+        background: linear-gradient(to right, rgba(158, 192, 247, 1), rgba(158, 192, 247, 0));
+    } */
     /* 1. Selectors */
 
     /* selector { cssProperty: cssValue: } */
@@ -6,11 +9,9 @@
 
         h1 {
         color: blue;
-        font-family: Roboto,sans-serif;
+        font-family: Roboto, sans-serif;
+        text-shadow: -5px -5px 5px black;
         }
-        /* body{
-            background-color: rgb(8, 94, 169);
-        } */
 
     /* b.) ID Selector - Selects the element based one the id*/
         /* Id should be unique for everyone */
@@ -97,7 +98,7 @@
             margin: 10px 5px;
             margin: 5px 10px 15px 20px;
 
-            /* NOTE:- padding & margin are both parent properties -> they also have sub-properties associated w them. */
+            /* NOTE:- padding & margin & background are parent properties -> they also have sub-properties associated w them. */
             /* padding-left:; padding-right:; padding-top:; padding-bottom:; margin-top:; margin-bottom:; margin-left:; margin-right:; */
         }
 
@@ -137,6 +138,22 @@
             height: 400px;
 
             background: radial-gradient(red,blue,green,yellow,orange,purple);
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+              
+            
+        }
+        .container-item{
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            text-align: center;
+            background: green;
+            color: white;
         }
 
     /* Fonts and Font-Family */

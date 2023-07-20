@@ -5,7 +5,210 @@
     <title>Bootstrap Document</title>
 </head>
 <body>
-    <h1>Welcome to Bootstrap!</h1>
+    <!-- <h1>Welcome to Bootstrap!</h1> -->
     <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
-</body>
+    <!-- # bootstrap cane be downloaded in three ways -->
+    <!-- 1. download bootstrap -->
+    <!-- 2. initializing via npm -->
+    <!-- 3. using bootstrap cdn -->
+    <!-- <div><h1>Welcome to Bootstrap </h1></div> -->
+    <div class="container-fluid">  <!-- used for heading purpose -->
+        <h1 class="page-header">Welcome to Bootstrap</h1>    <!---page-header  put line after heading-->
+    </div>
+    <hr>
+    <div class="container">
+         <p class="lead">   <!--lead used to heighlight a specific part -->
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nesciunt fugiat, obcaecati 
+            minus debitis mollitia consectetur vitae distinctio eaque voluptate cupiditate sint soluta repudiandae 
+            eligendi numquam ducimus consequuntur iste temporibus?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error labore, veritatis, 
+            asperiores est iste commodi itaque laborum illo odio odit porro. Fugiat cupiditate facere distinctio eos 
+            corporis reprehenderit dicta cum.
+        </p>
+        <hr>
+        <h2>Text and Alignments</h2>
+        <P class="text-center text-capitalize">Hemlo</P>
+        <p class="text-left">hiiiiii</p>
+        <P class="text-right">hiiillooo</P>
+        <hr>
+        <h2>Contextual classess</h2>
+        <!-- primary - blue, sucess- green, danger-red, -->
+        <!-- muted- grey, info-light blue, warning- yellow/orangish -->
+        <!-- version 4 --- secondary , light, dark -->
+        <p class="text-primary">Primary</p>
+        <p class="text-success">Sucess</p>
+        <p class="text-danger">Danger</p>
+        <P class="text-muted">Muted</P>
+        <p class="text-info">Info</p>
+        <p class="text-warning">Warning</p>  
+        
+        
+        <p class="bg-primary">Primary</p>
+        <p class="bg-success">Sucess</p>
+        <p class="bg-danger">Danger</p>
+        <!-- <P class="bg-muted">Mutedt </P>  exeption bg muted does not exist -->
+        <p class="bg-info">Info</p>
+        <p class="bg-warning">Warning</p> 
+        <hr>
+        
+        <h2>Buttons / Submits & Anchors</h2>
+        <input class="btn btn-primary btn-sm" type="button" value="Button"></button>
+        <input class="btn btn-danger btn-xs" type="submit" value="SUBMIT">
+        <a class="btn btn-warning btn-lg" href="a">Anchor</a>
+        <hr>
+
+        <h2>Tables</h2>
+        <table class="table border table-condensed table-hover">
+            <tr>
+                <th>Empl id</th>
+                <th>Name</th>
+                <th>Emp email</th>
+                <th>empl designation</th> 
+            </tr>
+            <tr>
+                <td>2001002047</td>
+                <td>Bhoot</td>
+                <td>bhoot652@gmail.com</td>
+                <td>Bhootian</td> 
+            </tr>
+            <tr>
+                <td>2001002047</td>
+                <td>rahul</td>
+                <td>rahul652@gmail.com</td>
+                <td>Assistant</td> 
+            </tr>
+            <tr>
+                <td>200100203</td>
+                <td>dolly</td>
+                <td>dolly652@gmail.com</td>
+                <td>Major</td> 
+            </tr>
+
+            </table>
+            <hr>
+
+            <h2>Forms</h2>
+            <div class="container-fluid" style="border:  double grey;">
+            <form>
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="enter your name..." /> 
+            </div>
+            <!-- Email :- username@hostname.com -->
+            <div class="form-group">
+                <input class="form-control" type="email" placeholder="enter your email..." />
+            </div>
+            <div class="form-group">
+                <input calss="form-control" type="password" placeholder="enter your password..." /> 
+            </div>
+            <div class="form-group">
+                <label>Date of Birth - </label>
+                <input class="form-control" type="date" /> 
+            </div>
+            <div class="form-group">
+                <label>How well do you feel? - </label>
+                <input class="from-control" type="range" />
+            </div> 
+            <label>Enter you gender - </label> 
+            <!-- <input type="checkbox" /> Male <br />
+            <input type="checkbox" /> Female <br />
+            <input type="checkbox" /> Others <br /> -->
+            <div class="form-group">
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select> 
+            </div>
+            <div class="form-group">
+                <label>Upload you CV - </label>
+                <input class="from-control" type="file" /> 
+            </div>
+            <div class="form-group">
+                <input class="from-control" type="color" /> 
+            </div>
+            <div class="form-group">
+                <button onclick="console.log('Btn was clicked!')">Click Me!</button>
+            </div>
+            <div class="form-group">
+                <input class="btn-success" type="submit" value="Sign Up" />
+            </div>
+            </form>
+            </div>
+            <hr>
+
+            <h2>Navigation bar</h2>
+            <div class="container form-control" style="display:flex; justify-content: center; flex-wrap: wrap; background-color: rgb(202, 202, 246);" >
+            <ol class="list-unstyled list-inline">
+                <li><a style="color: black;" href="#">Home</a></li>
+                <li><a style="color: black;" href="#">Contact</a></li>
+                <li><a style="color: black;" href="#">Account</a></li>
+                <li><a style="color: black;" href="#">Services</a></li>
+                <li><a style="color: black;" href="#">Setting</a></li>
+            </ol>
+            </div>
+            <hr>
+
+            <h2>Panels</h2>
+            <div class="container">
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h3>Panel</h3>
+                    </div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi, consectetur numquam quo expedita officia iste illo provident laudantium amet hic explicabo esse nesciunt libero ex nulla ea aliquam voluptatibus.
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="container-fluid">
+            <h2>Grids</h2>
+            </div>
+            <div class="container">   <!--one row can conatin only 12 grids -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 style="text-align: center;">Panel</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi, consectetur numquam quo expedita officia iste illo provident laudantium amet hic explicabo esse nesciunt libero ex nulla ea aliquam voluptatibus.
+            
+                                </div>
+                            </div>                     
+                    </div>
+                    <div class="col-lg-4">
+                        
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h3 style="text-align: center;">Panel</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi, consectetur numquam quo expedita officia iste illo provident laudantium amet hic explicabo esse nesciunt libero ex nulla ea aliquam voluptatibus.
+            
+                                </div>
+                            </div>
+                    
+                    </div>
+                    <div class="col-lg-4">
+                    
+                            <div class="panel panel-danger">
+                                <div class="panel-heading">
+                                    <h3 style="text-align: center;">Panel</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi, consectetur numquam quo expedita officia iste illo provident laudantium amet hic explicabo esse nesciunt libero ex nulla ea aliquam voluptatibus.
+            
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

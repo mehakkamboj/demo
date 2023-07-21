@@ -1,4 +1,4 @@
-// --> not completely oops
+// --> not completely oops 
 // ---> any thing and everything we see in javascript is objects
 // ----->interpreted language
 // ECMA IS RESPONSIBLE for providing syntax to java script 
@@ -44,4 +44,57 @@ demo >=0 ? console.log("+ve no") : console.log("-ve no")
 
 // string can be written in three ways 1.''  2. ""  3. ``
 demo2 = 100 
-console.log(`${demo} ans ${demo2} is a +ve number`)
+console.log(`${demo} and ${demo2} is a +ve number`)
+
+// KEYWORD in javascript
+// 1. let -- private keyword can be acess within a defined scope
+// 2. var -- public once defined can be acessed anywhere 
+// 3. const -- it should be declared as well as defined, and value can't be changed once defined
+flag = true
+if (flag) {
+    var a = 100
+}
+else{
+    b = 200
+}
+console.log(a);
+
+// LOOPS
+// 1. for loop
+// for (let i = 0; i <= 7; i++) {
+//     console.log(i);    
+// }
+// 2. while loop
+// let i = 0;
+// while ( i <= 4) {
+//     console.log(i);
+//     i++;
+// }
+
+// NON PREMITIVE DATATYPE (Non-PDTs)
+// 1. Arrays
+// let arr = [10, 20, 30, 40, 50]
+// let ar = [];
+// console.log(arr);
+// let arrobj = new Array(10);
+// for (let index = 0; index < arr.length; index++) {
+//     console.log(arr[index]);
+//     }
+// console.log(typeof(arrobj));
+// console.log(typeof(ar));
+// console.log(typeof(arr));
+
+let arr1 = [10, 20 , 30, 40, 50];
+let arr2 = [...arr1] // (...)--> spread operator used to copy value from one array to another
+arr2.push(60)
+console.log(arr1);
+console.log(arr2);
+
+let ab = arr1.shift() // removing element from start
+console.log(arr1);
+
+arr1.unshift(10) // insert element at start
+console.log(arr1);
+
+let arr3 = arr1.concat(arr2) // concatenation of two or more array
+console.log(arr3);

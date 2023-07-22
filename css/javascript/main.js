@@ -72,7 +72,7 @@ console.log(a);
 // }
 
 // NON PREMITIVE DATATYPE (Non-PDTs)
-// 1. Arrays
+//1. Arrays
 // let arr = [10, 20, 30, 40, 50]
 // let ar = [];
 // console.log(arr);
@@ -98,3 +98,24 @@ console.log(arr1);
 
 let arr3 = arr1.concat(arr2) // concatenation of two or more array
 console.log(arr3);
+
+// 2D ARRAY
+let twodarray = [[10, 20, 30], [40, 50, 60], [70, 80, 90]] 
+console.log(twodarray);
+console.log(twodarray[1][1]);
+
+// 2. JS OBJECTS - {} the  curly brackets mean the data is an object :-
+// let myobj = { key1: value1, key2: value2}
+let myobj = {
+    name : 'Villu',
+    email : '2002jashanpreet@gmail.com',
+    password : 'villubkra',
+    hobbies : ['Guitarist', 'Playing games', 'eating'],
+    address : {
+        planet : 'pluto',
+        city : 'Somewhere in pluto'
+    }
+}
+console.log(myobj); // in this array data type is stored in object
+console.log(`Hemlo my name is ${myobj.name}, my email is ${myobj.email} and password is ${myobj.password}, and my hobbies are ${myobj.hobbies} and my address is ${myobj.address.planet} and city is ${myobj.address.city}`);
+console.log(myobj.hobbies[1]);

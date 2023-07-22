@@ -119,3 +119,50 @@ let myobj = {
 console.log(myobj); // in this array data type is stored in object
 console.log(`Hemlo my name is ${myobj.name}, my email is ${myobj.email} and password is ${myobj.password}, and my hobbies are ${myobj.hobbies} and my address is ${myobj.address.planet} and city is ${myobj.address.city}`);
 console.log(myobj.hobbies[1]);
+
+
+// 3. ARRAY OF OBJECTS :- [{}, {}, {}]
+const users =  
+[
+    {name : 'User1',
+    email : 'user1@gmail.com',
+    password : 'example1',
+    hobbies : ['Guitarist', 'Playing games', 'eating'],
+    address : {
+        planet : 'Street1',
+        city : 'Khrar',
+        pincodes : [1234, 4566]
+    }},
+    {name : 'User2',
+    email : 'user2@gmail.com',
+    password : 'example2',
+    hobbies : ['Guitarist', 'Playing games', 'eating'],
+    address : {
+        planet : 'Street2',
+        city : 'Khrar',
+        pincodes : [1234, 4566]
+    }},
+    {name : 'User3',
+    email : 'user3@gmail.com',
+    password : 'example3',
+    hobbies : ['Guitarist', 'Playing games', 'eating'],
+    address : {
+        planet : 'Street3',
+        city : 'Khrar',
+        pincodes : [1234, 4566]
+    }}
+]
+console.log(users[0].email);
+console.log(users[0].address.pincodes[0]);
+
+// JSON--JAVASCRIPT OBJECT NOTATION
+
+// JS --> 1. Interface -> 2. Function
+
+// 1. stringify() -> AoO to JSON
+const myJSONResponse = JSON.stringify(users);
+console.log(myJSONResponse)
+
+// 2. parse() -> JSON to AoO
+const convertAoO = JSON.parse(myJSONResponse)
+console.log(convertAoO)

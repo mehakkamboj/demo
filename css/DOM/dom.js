@@ -104,12 +104,61 @@ const myBtn = document.getElementById('btn')
 // myBtn.addEventListener('click',(clickEventHandler))
 // different evennts-- copy, cut, keyup, keydown, keypress, click, doubleClick(dbl)
 
-document.getElementById('item-one').addEventListener('click', ()=> {
-    console.log('My Item button was clicked');
-})
+// document.getElementById('item-one').addEventListener('click', ()=> {
+//     console.log('My Item button was clicked');
+// })
 
 // SUBMIT BUTTON --- always reload the page when clicked (default property by html)
-document.getElementById('submitBtn').addEventListener('click', ()=>{
-    console.log('My submit botton was clicked');
-})
+// document.getElementById('submitBtn').addEventListener('click', (T)=>{
+//     T.preventDefault()
+//     console.log('My submit botton was clicked');
+// })
+
+// document.getElementById("text-input").addEventListener('mouseenter', ()=>{
+//     console.log('Cursor entered the elemnet');
+// })
+// document.getElementById("text-input").addEventListener('mouseleave', ()=>{
+//     console.log('Cursor leave the elemnet');
+// })
+
+// document.getElementById('item-one').addEventListener('click', ()=>{
+//     document.getElementById('item-two').style.backgroundColor = 'yellow'})
+
+//KeyBoard Events
+// document.getElementById("text-input").addEventListener('copy', ()=>{
+//         console.log('text was copied');
+// })
+// document.getElementById("text-input").addEventListener('paste', ()=>{
+//         console.log('text was paste');
+// })
+// document.getElementById("text-input").addEventListener('cut', ()=>{
+//         console.log('text was cut');
+// })
+// document.getElementById("text-input").addEventListener('keydown', ()=>{
+//         console.log(' key was down');
+// })
+// document.getElementById("text-input").addEventListener('keypress', ()=>{
+//         console.log('key was pressed');
+// })
+// document.getElementById("text-input").addEventListener('keypress', (e)=>{  // this will print the run time value in console...
+//         console.log(e.target.value)
+// })
+// this will print the value written in text box after run time
+// document.getElementById('submitBtn').addEventListener('click',(e) => {
+//     e.preventDefault()
+//      console.log(document.getElementById('text-input').value)
+// })
+
+
+
+// Javascrippt is timebound langauge as it is interpreted it compile code line by line but if there is delay on any line to compile then it will
+// run next line... this can be explained with example given below...
+// as there is delay of 3s so it compile next line and then comeback again after the delay...
+// setTimeout( ()=> {
+//     console.log('Callback was excellent..');
+// },3000)
+// console.log('callback after excellent...');
+
+
+
 

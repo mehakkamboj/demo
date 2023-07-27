@@ -1,5 +1,5 @@
 // DOM -> Document  Object Model
-
+`   `
 console.dir(document)
 console.log(document.URL)
 console.log(document.all)
@@ -81,7 +81,7 @@ console.log(document.all[18]);
 
 // EVENTS IN DOM
 
-const myBtn = document.getElementById('btn')
+// const myBtn = document.getElementById('btn')
 // Element.addEventListner( eventName, () => {})
 // Element.addEventListener(eventName, functionName)
 
@@ -149,8 +149,6 @@ const myBtn = document.getElementById('btn')
 //      console.log(document.getElementById('text-input').value)
 // })
 
-
-
 // Javascrippt is timebound langauge as it is interpreted it compile code line by line but if there is delay on any line to compile then it will
 // run next line... this can be explained with example given below...
 // as there is delay of 3s so it compile next line and then comeback again after the delay...
@@ -160,5 +158,51 @@ const myBtn = document.getElementById('btn')
 // console.log('callback after excellent...');
 
 
+// Activity
+// document.querySelector('#container-box').addEventListener('mouseenter', (e) => {
+//     document.querySelector('#container-box').style.backgroundColor =`rgb(0,${e.offsetX}, ${e.offsetY})`
+// })
+// document.querySelector('#container-box').addEventListener('mouseleave', (e) => {
+//     document.querySelector('#container-box').style.backgroundColor = `rgb(100,${e.offsetX}, ${e.offsetY})`
+// })
+
+// DOM TRAVERSALS
+// 1. PARENT ELEMENT
+// console.log(document.getElementById('items').parentElement);
+
+//2. CHILDREN
+// const item = document.getElementById('items').children;
+// for (let i = 0; i < item.length; i++) {
+//     if (i % 2 == 0) {
+//         item[i].style.backgroundColor = '#f4f4f4'  
+//     }    
+// }
+
+//3 FIRST CHILD
+//console.log(document.getElementById('items').firstChild); // if there is intendation ot will give ans as text due to intendation...
+// console.log(document.getElementById('items').firstElementChild);
+// console.log(doucument.getElementById('items').firstChild);
+// console.log(doucument.getElementById('items').firstChild);
 
 
+// console.log(document.getElementById('second-heading').parentElement.parentElement.parentElement)
+
+//Creating HTML using js-->
+// the div created is not a part of html it is part of javascript
+// const myDiv = document.createElement('div')
+// myDiv.textContent = "Demo-Text"
+// myDiv.setAttribute('id', 'myDiv')
+// myDiv.setAttribute('class', ',myDiv-class')
+
+//Adding above div to html document
+// document.getElementById("dummy-div").appendChild(myDiv)
+
+// ITEM LISTER APPLICATION
+document.getElementById('submitBtn').addEventListener('click', (e)=>{
+    e.preventDefault()
+    const text = document.getElementById('text-input').value
+    const text_ui = document.createElement('li')
+    text_ui.textContent = text
+    text_ui.setAttribute('class', 'list-group-item')
+    document.getElementById('items').appendChild(text_ui)
+ })
